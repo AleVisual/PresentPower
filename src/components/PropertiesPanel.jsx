@@ -42,13 +42,7 @@ const PropertiesPanel = ({
                         <h3 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider flex items-center">
                             <Palette size={14} className="mr-2" /> Fondo y Estilo
                         </h3>
-                        <button
-                            onClick={toggleTheme}
-                            className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all shadow-sm"
-                            title={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-                        >
-                            {theme === 'dark' ? <Sun size={16} className="text-amber-500" /> : <Moon size={16} className="text-indigo-600" />}
-                        </button>
+
                     </div>
 
                     <div className="mb-3">

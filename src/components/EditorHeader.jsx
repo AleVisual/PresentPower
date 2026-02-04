@@ -124,7 +124,7 @@ const EditorHeader = ({
                 {/* Alternancia de Tema (Sol/Luna) - Desktop & Tablet */}
                 <button
                     onClick={toggleTheme}
-                    className="hidden xs:flex p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+                    className="flex p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
                     title={theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro'}
                 >
                     {theme === 'dark' ? <Sun size={20} className="text-amber-500" /> : <Moon size={20} className="text-indigo-600" />}
@@ -146,12 +146,6 @@ const EditorHeader = ({
                         <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
                             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Acciones Rápidas</span>
                             <div className="flex items-center space-x-2">
-                                <button
-                                    onClick={toggleTheme}
-                                    className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-400"
-                                >
-                                    {theme === 'dark' ? <Sun size={18} className="text-amber-500" /> : <Moon size={18} className="text-indigo-600" />}
-                                </button>
                                 <button onClick={() => setShowMobileTools(false)} className="text-slate-400 p-1">
                                     <Plus size={18} className="rotate-45" />
                                 </button>

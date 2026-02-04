@@ -52,7 +52,7 @@ const EditorHeader = ({
                 </div>
 
                 <img
-                    src="/assets/logo.png"
+                    src={`${import.meta.env.BASE_URL}assets/logo.png`}
                     alt="Logo"
                     className="block h-7 lg:h-8 w-auto object-contain hover:scale-105 transition-transform cursor-pointer flex-shrink-0"
                 />

@@ -100,7 +100,7 @@ const AuthView = ({ onLogin }) => {
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 1, ease: "easeOut" }}
-                            src="/assets/logo.png"
+                            src={`${import.meta.env.BASE_URL}assets/logo.png`}
                             alt="Presentación Power Logo"
                             className="w-24 h-24 mb-6 object-contain drop-shadow-2xl"
                         />

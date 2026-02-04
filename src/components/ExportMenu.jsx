@@ -11,7 +11,7 @@ const ExportMenu = ({ slides, audioFile, showAlert, showText = false }) => {
         let base64Icon = null;
 
         try {
-            base64Icon = await fetch('/assets/icono.ico').then(r => r.blob()).then(blob => {
+            base64Icon = await fetch(`${import.meta.env.BASE_URL}assets/icono.ico`).then(r => r.blob()).then(blob => {
                 return new Promise((resolve) => {
                     const reader = new FileReader();
                     reader.onloadend = () => resolve(reader.result);

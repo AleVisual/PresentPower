@@ -6,31 +6,31 @@ const FEATURE_DATA = [
     {
         title: "Gestión de Proyecto Pro",
         description: "Controla cada detalle de tu presentación: guarda, carga y exporta tus proyectos con un sistema de archivos inteligente y seguro.",
-        image: "/images/imag1.png",
+        image: `${import.meta.env.BASE_URL}images/imag1.png`,
         icon: <Star className="text-amber-400" size={24} />
     },
     {
         title: "Lienzo de Alta Precisión",
         description: "Edita textos y elementos con un sistema de coordenadas dinámico que se adapta a cualquier pantalla (Móvil, Tablet o PC).",
-        image: "/images/imag2.png",
+        image: `${import.meta.env.BASE_URL}images/imag2.png`,
         icon: <Monitor className="text-blue-400" size={24} />
     },
     {
         title: "Personalización Infinita",
         description: "Elige entre cientos de fuentes, colores y fondos premium. Todo con corrector ortográfico activo para un acabado perfecto.",
-        image: "/images/imag3.png",
+        image: `${import.meta.env.BASE_URL}images/imag3.png`,
         icon: <Sparkles className="text-purple-400" size={24} />
     },
     {
         title: "Grabación MP4 Directa",
         description: "Captura tu presentación en video de alta calidad con un solo clic. Ideal para tutoriales, demos y redes sociales.",
-        image: "/images/imag4.png",
+        image: `${import.meta.env.BASE_URL}images/imag4.png`,
         icon: <Cpu className="text-emerald-400" size={24} />
     },
     {
         title: "Exportación Multiplataforma",
         description: "Lleva tus ideas a cualquier lugar: exporta a HTML interactivo o PowerPoint sin perder la fidelidad del diseño original.",
-        image: "/images/imag5.png",
+        image: `${import.meta.env.BASE_URL}images/imag5.png`,
         icon: <CheckCircle2 className="text-indigo-400" size={24} />
     }
 ];

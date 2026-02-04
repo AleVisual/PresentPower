@@ -4,6 +4,7 @@ import { CheckCircle2, Star, Sparkles, Monitor, Cpu } from 'lucide-react';
 
 const FEATURE_DATA = [
     {
+        id: "gestion-proyecto-pro",
         title: "Gestión de Proyecto Pro",
         description: "Controla cada detalle de tu presentación: guarda, carga y exporta tus proyectos con un sistema de archivos inteligente y seguro.",
         image: `${import.meta.env.BASE_URL}images/GestiondeProyectos.png`,
@@ -56,6 +57,7 @@ const FeatureShowcase = () => {
                     {FEATURE_DATA.map((feature, index) => (
                         <motion.div
                             key={index}
+                            id={feature.id}
                             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}

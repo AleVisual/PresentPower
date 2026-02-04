@@ -66,6 +66,32 @@ const AuthView = ({ onLogin }) => {
 
     return (
         <div className="relative min-h-screen w-full bg-[#0a0a0f] text-white selection:bg-blue-500/30 overflow-y-auto scroll-smooth">
+            {/* --- Header --- */}
+            <header className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-lg p-4 flex justify-between items-center border-b border-white/10">
+                <div className="flex items-center space-x-4">
+                    <img
+                        src={`${import.meta.env.BASE_URL}assets/logo.png`}
+                        alt="Presentación Power Logo"
+                        className="w-10 h-10 object-contain"
+                    />
+                    <span className="text-xl font-bold text-white">Presentación Power</span>
+                </div>
+                <nav className="flex space-x-4">
+                    <a
+                        href="#gestion-proyecto-pro"
+                        className="px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-blue-600 transition-colors"
+                    >
+                        Presentación
+                    </a>
+                    <a
+                        href="#footer"
+                        className="px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-green-600 transition-colors"
+                    >
+                        Contacto
+                    </a>
+                </nav>
+            </header>
+
             {/* --- Fondo Dinámico (Fijo) --- */}
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-blue-600/10 blur-[120px] rounded-full"></div>
@@ -87,7 +113,7 @@ const AuthView = ({ onLogin }) => {
             </div>
 
             {/* --- Contenido Principal (Hero) --- */}
-            <div className="container relative z-10 mx-auto px-6 py-12 lg:py-0 min-h-screen flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div id="domina-api-presentacion" className="container relative z-10 mx-auto px-6 py-12 lg:py-0 min-h-screen flex flex-col lg:flex-row items-center justify-between gap-12">
                 {/* --- Left Side: Landing Content --- */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -245,10 +271,24 @@ const AuthView = ({ onLogin }) => {
             <FeatureShowcase />
 
             {/* Footer Simple */}
-            <footer className="relative z-10 py-12 border-t border-white/5 bg-black/20 text-center">
+            <footer id="footer" className="relative z-10 py-12 border-t border-white/5 bg-black/20 text-center">
+                <img
+                    src={`${import.meta.env.BASE_URL}assets/milogo2.png`}
+                    alt="Logo de Alejandro Bajuk"
+                    className="mx-auto h-12 mb-4"
+                />
+                <p className="text-slate-500 text-sm mb-2">
+                    Email: <a href="mailto:abajuk@hotmail.com" className="text-blue-400 hover:underline">abajuk@hotmail.com</a>
+                </p>
+                <p className="text-slate-500 text-sm mb-2">
+                    WhatsApp: <a href="https://wa.me/5492284639058" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">2284639058</a>
+                </p>
                 <p className="text-slate-500 text-sm">
                     &copy; 2026 Presentación Power - API de Diseño Visual Avanzado. Todos los derechos reservados.
                 </p>
+                <p className="text-slate-500 text-xs mt-1">
+                desarrollado por Alejandro Bajuk con la colaboracion de Gemini y otros agentes de ia
+            </p>
             </footer>
         </div>
     );

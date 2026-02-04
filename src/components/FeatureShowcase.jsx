@@ -6,31 +6,31 @@ const FEATURE_DATA = [
     {
         title: "Gestión de Proyecto Pro",
         description: "Controla cada detalle de tu presentación: guarda, carga y exporta tus proyectos con un sistema de archivos inteligente y seguro.",
-        image: `${import.meta.env.BASE_URL}images/imag1.png`,
+        image: `${import.meta.env.BASE_URL}images/GestiondeProyectos.png`,
         icon: <Star className="text-amber-400" size={24} />
     },
     {
         title: "Lienzo de Alta Precisión",
         description: "Edita textos y elementos con un sistema de coordenadas dinámico que se adapta a cualquier pantalla (Móvil, Tablet o PC).",
-        image: `${import.meta.env.BASE_URL}images/imag2.png`,
+        image: `${import.meta.env.BASE_URL}images/Presentacion.png`,
         icon: <Monitor className="text-blue-400" size={24} />
     },
     {
         title: "Personalización Infinita",
-        description: "Elige entre cientos de fuentes, colores y fondos premium. Todo con corrector ortográfico activo para un acabado perfecto.",
-        image: `${import.meta.env.BASE_URL}images/imag3.png`,
+        description: "Configura tu forma de grabar antes. Consejo: La calidad de la grabacion sera de acuerdo con tu GPU que poseas, si tu pc no posee buen GPU recomendacion es usar 720p, 30FPS",
+        image: `${import.meta.env.BASE_URL}images/ConfiguracionGrabar.png`,
         icon: <Sparkles className="text-purple-400" size={24} />
     },
     {
         title: "Grabación MP4 Directa",
         description: "Captura tu presentación en video de alta calidad con un solo clic. Ideal para tutoriales, demos y redes sociales.",
-        image: `${import.meta.env.BASE_URL}images/imag4.png`,
+        image: `${import.meta.env.BASE_URL}images/GrabaPresentacion.png`,
         icon: <Cpu className="text-emerald-400" size={24} />
     },
     {
         title: "Exportación Multiplataforma",
         description: "Lleva tus ideas a cualquier lugar: exporta a HTML interactivo o PowerPoint sin perder la fidelidad del diseño original.",
-        image: `${import.meta.env.BASE_URL}images/imag5.png`,
+        image: `${import.meta.env.BASE_URL}images/ExportarProyecto.png`,
         icon: <CheckCircle2 className="text-indigo-400" size={24} />
     }
 ];

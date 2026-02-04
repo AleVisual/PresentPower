@@ -26,3 +26,5 @@ export default defineConfig({
         },
     }
 })
+
+// Se agregó un comentario para forzar un nuevo despliegue de GitHub Actions.
